@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         public void onKey(int primaryCode, int[] keyCodes) {
             View focusCurrent = MainActivity.this.getWindow().getCurrentFocus();
             if( focusCurrent==null || focusCurrent.getClass()!=AppCompatEditText.class ) return;
-            //EditText edittext = (EditText) focusCurrent;
             Editable editable = editText.getText();
             int start = editText.getSelectionStart();
             // Handle key
@@ -117,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                 View focusNew= editText.focusSearch(View.FOCUS_RIGHT);
                 if( focusNew!=null ) focusNew.requestFocus();
             } else {// Insert character
-                editable.insert(start, "A");//Character.toString((char) primaryCode));
+                editable.insert(start, CodeConverter.convert(primaryCode));
             }
         }
 

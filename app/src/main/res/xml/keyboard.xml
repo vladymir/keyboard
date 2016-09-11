@@ -26,11 +26,11 @@
         <Key android:codes="8000"    android:keyLabel="." android:horizontalGap="2%p" />
     </Row>
     <Row>
-        <Key android:codes="6"    android:keyLabel="C" android:horizontalGap="2%p"/>
-        <Key android:codes="7"    android:keyLabel="Pb" android:horizontalGap="2%p"/>
-        <Key android:codes="8"    android:keyLabel="Br" android:horizontalGap="2%p" />
-        <Key android:codes="9"    android:keyLabel="K" android:horizontalGap="2%p" />
-        <Key android:codes="0"    android:keyLabel="Ca" android:horizontalGap="2%p" />
+        <Key android:codes="9000"    android:keyLabel="C" android:horizontalGap="2%p"/>
+        <Key android:codes="10000"    android:keyLabel="Pb" android:horizontalGap="2%p"/>
+        <Key android:codes="11000"    android:keyLabel="Br" android:horizontalGap="2%p" />
+        <Key android:codes="12000"    android:keyLabel="K" android:horizontalGap="2%p" />
+        <Key android:codes="13000"    android:keyLabel="Ca" android:horizontalGap="2%p" />
     </Row>
 
     <Row>
