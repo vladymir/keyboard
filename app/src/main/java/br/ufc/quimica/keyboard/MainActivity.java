@@ -7,16 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatEditText;
 import android.text.Editable;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.Button;
 import android.widget.EditText;
+
+import br.ufc.quimica.keyboard.parser.Evaluator;
 
 public class MainActivity extends AppCompatActivity {
 
     private Keyboard keyBoard;
     private KeyboardView kbView;
     private EditText editText;
+    private Button okButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         kbView.setKeyboard(keyBoard);
         kbView.setOnKeyboardActionListener(mKbListener);
+
+        okButton = (Button)findViewById(R.id.button);
+        okButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("VLAD", String.valueOf(new Evaluator().eval("H2")));
+            }
+        });
 
         editText = (EditText)findViewById(R.id.editText);
         editText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
