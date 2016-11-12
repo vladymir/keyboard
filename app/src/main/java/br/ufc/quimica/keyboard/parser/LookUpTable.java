@@ -31,6 +31,7 @@ public class LookUpTable {
 		table.put("H", 1);
 		table.put("Cl", 3);
 		table.put("N", 4);
+		table.put("O", 8);
 		
 	}
 	

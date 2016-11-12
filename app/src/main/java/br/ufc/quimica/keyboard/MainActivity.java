@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         okButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("VLAD", String.valueOf(new Evaluator().eval("H2")));
+                Log.d("VLAD", String.valueOf(new Evaluator().eval("H2NO4.2H2O")));
             }
         });
 
