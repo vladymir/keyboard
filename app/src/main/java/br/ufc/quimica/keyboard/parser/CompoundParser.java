@@ -1,7 +1,6 @@
+package br.ufc.quimica.keyboard.parser;
+
 // Generated from Compound.g4 by ANTLR 4.3
-
- package br.ufc.quimica.keyboard.parser;
-
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -222,16 +221,13 @@ public class CompoundParser extends Parser {
 	}
 
 	public static class HidrContext extends ParserRuleContext {
-		public TerminalNode INT(int i) {
-			return getToken(CompoundParser.INT, i);
-		}
 		public List<CompoundContext> compound() {
 			return getRuleContexts(CompoundContext.class);
 		}
 		public CompoundContext compound(int i) {
 			return getRuleContext(CompoundContext.class,i);
 		}
-		public List<TerminalNode> INT() { return getTokens(CompoundParser.INT); }
+		public TerminalNode INT() { return getToken(CompoundParser.INT, 0); }
 		public HidrContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -254,26 +250,13 @@ public class CompoundParser extends Parser {
 	public final HidrContext hidr() throws RecognitionException {
 		HidrContext _localctx = new HidrContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_hidr);
-		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(32); compound(0);
 			setState(33); match(T__0);
-			setState(35); 
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			do {
-				{
-				{
-				setState(34); match(INT);
-				}
-				}
-				setState(37); 
-				_errHandler.sync(this);
-				_la = _input.LA(1);
-			} while ( _la==INT );
-			setState(39); compound(0);
+			setState(34); match(INT);
+			setState(35); compound(0);
 			}
 		}
 		catch (RecognitionException re) {
@@ -288,13 +271,10 @@ public class CompoundParser extends Parser {
 	}
 
 	public static class ParensContext extends ParserRuleContext {
-		public TerminalNode INT(int i) {
-			return getToken(CompoundParser.INT, i);
-		}
 		public CompoundContext compound() {
 			return getRuleContext(CompoundContext.class,0);
 		}
-		public List<TerminalNode> INT() { return getTokens(CompoundParser.INT); }
+		public TerminalNode INT() { return getToken(CompoundParser.INT, 0); }
 		public ParensContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -318,31 +298,12 @@ public class CompoundParser extends Parser {
 		ParensContext _localctx = new ParensContext(_ctx, getState());
 		enterRule(_localctx, 6, RULE_parens);
 		try {
-			int _alt;
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(41); match(T__2);
-			setState(42); compound(0);
-			setState(43); match(T__1);
-			setState(45); 
-			_errHandler.sync(this);
-			_alt = 1;
-			do {
-				switch (_alt) {
-				case 1:
-					{
-					{
-					setState(44); match(INT);
-					}
-					}
-					break;
-				default:
-					throw new NoViableAltException(this);
-				}
-				setState(47); 
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
-			} while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER );
+			setState(37); match(T__2);
+			setState(38); compound(0);
+			setState(39); match(T__1);
+			setState(40); match(INT);
 			}
 		}
 		catch (RecognitionException re) {
@@ -384,12 +345,12 @@ public class CompoundParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(49); match(ATOM);
-			setState(51);
-			switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
+			setState(42); match(ATOM);
+			setState(44);
+			switch ( getInterpreter().adaptivePredict(_input,4,_ctx) ) {
 			case 1:
 				{
-				setState(50); match(INT);
+				setState(43); match(INT);
 				}
 				break;
 			}
@@ -420,21 +381,19 @@ public class CompoundParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\t8\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\3\2\5\2\17\n\2\3\3\3\3\3\3\7\3\24\n\3\f"+
-		"\3\16\3\27\13\3\3\3\5\3\32\n\3\3\3\3\3\7\3\36\n\3\f\3\16\3!\13\3\3\4\3"+
-		"\4\3\4\6\4&\n\4\r\4\16\4\'\3\4\3\4\3\5\3\5\3\5\3\5\6\5\60\n\5\r\5\16\5"+
-		"\61\3\6\3\6\5\6\66\n\6\3\6\2\3\4\7\2\4\6\b\n\2\29\2\16\3\2\2\2\4\31\3"+
-		"\2\2\2\6\"\3\2\2\2\b+\3\2\2\2\n\63\3\2\2\2\f\17\5\4\3\2\r\17\5\6\4\2\16"+
-		"\f\3\2\2\2\16\r\3\2\2\2\17\3\3\2\2\2\20\21\b\3\1\2\21\25\5\n\6\2\22\24"+
-		"\5\n\6\2\23\22\3\2\2\2\24\27\3\2\2\2\25\23\3\2\2\2\25\26\3\2\2\2\26\32"+
-		"\3\2\2\2\27\25\3\2\2\2\30\32\5\b\5\2\31\20\3\2\2\2\31\30\3\2\2\2\32\37"+
-		"\3\2\2\2\33\34\f\4\2\2\34\36\5\b\5\2\35\33\3\2\2\2\36!\3\2\2\2\37\35\3"+
-		"\2\2\2\37 \3\2\2\2 \5\3\2\2\2!\37\3\2\2\2\"#\5\4\3\2#%\7\5\2\2$&\7\7\2"+
-		"\2%$\3\2\2\2&\'\3\2\2\2\'%\3\2\2\2\'(\3\2\2\2()\3\2\2\2)*\5\4\3\2*\7\3"+
-		"\2\2\2+,\7\3\2\2,-\5\4\3\2-/\7\4\2\2.\60\7\7\2\2/.\3\2\2\2\60\61\3\2\2"+
-		"\2\61/\3\2\2\2\61\62\3\2\2\2\62\t\3\2\2\2\63\65\7\6\2\2\64\66\7\7\2\2"+
-		"\65\64\3\2\2\2\65\66\3\2\2\2\66\13\3\2\2\2\t\16\25\31\37\'\61\65";
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\t\61\4\2\t\2\4\3"+
+		"\t\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\3\2\5\2\17\n\2\3\3\3\3\3\3\7\3\24\n\3"+
+		"\f\3\16\3\27\13\3\3\3\5\3\32\n\3\3\3\3\3\7\3\36\n\3\f\3\16\3!\13\3\3\4"+
+		"\3\4\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\5\3\6\3\6\5\6/\n\6\3\6\2\3\4\7\2\4"+
+		"\6\b\n\2\2\60\2\16\3\2\2\2\4\31\3\2\2\2\6\"\3\2\2\2\b\'\3\2\2\2\n,\3\2"+
+		"\2\2\f\17\5\4\3\2\r\17\5\6\4\2\16\f\3\2\2\2\16\r\3\2\2\2\17\3\3\2\2\2"+
+		"\20\21\b\3\1\2\21\25\5\n\6\2\22\24\5\n\6\2\23\22\3\2\2\2\24\27\3\2\2\2"+
+		"\25\23\3\2\2\2\25\26\3\2\2\2\26\32\3\2\2\2\27\25\3\2\2\2\30\32\5\b\5\2"+
+		"\31\20\3\2\2\2\31\30\3\2\2\2\32\37\3\2\2\2\33\34\f\4\2\2\34\36\5\b\5\2"+
+		"\35\33\3\2\2\2\36!\3\2\2\2\37\35\3\2\2\2\37 \3\2\2\2 \5\3\2\2\2!\37\3"+
+		"\2\2\2\"#\5\4\3\2#$\7\5\2\2$%\7\7\2\2%&\5\4\3\2&\7\3\2\2\2\'(\7\3\2\2"+
+		"()\5\4\3\2)*\7\4\2\2*+\7\7\2\2+\t\3\2\2\2,.\7\6\2\2-/\7\7\2\2.-\3\2\2"+
+		"\2./\3\2\2\2/\13\3\2\2\2\7\16\25\31\37.";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

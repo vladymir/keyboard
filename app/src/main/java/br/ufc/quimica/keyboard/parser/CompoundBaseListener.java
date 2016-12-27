@@ -1,7 +1,6 @@
+package br.ufc.quimica.keyboard.parser;
+
 // Generated from Compound.g4 by ANTLR 4.3
-
- package br.ufc.quimica.keyboard.parser;
-
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -63,43 +62,43 @@ public class CompoundBaseListener implements CompoundListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitHidr( CompoundParser.HidrContext ctx) { }
+	@Override public void exitHidr(CompoundParser.HidrContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterElement( CompoundParser.ElementContext ctx) { }
+	@Override public void enterElement(CompoundParser.ElementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitElement( CompoundParser.ElementContext ctx) { }
+	@Override public void exitElement(CompoundParser.ElementContext ctx) { }
 
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEveryRule( ParserRuleContext ctx) { }
+	@Override public void enterEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEveryRule( ParserRuleContext ctx) { }
+	@Override public void exitEveryRule(ParserRuleContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitTerminal( TerminalNode node) { }
+	@Override public void visitTerminal(TerminalNode node) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void visitErrorNode( ErrorNode node) { }
+	@Override public void visitErrorNode(ErrorNode node) { }
 }

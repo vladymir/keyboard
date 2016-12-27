@@ -63,13 +63,13 @@ public class Evaluator extends CompoundBaseVisitor<Integer>{
 	public Integer visitHidr(CompoundParser.HidrContext ctx) { 
 		return visit(ctx.compound(0)) + 
 				(visit(ctx.compound(1)) * 
-						Integer.valueOf(ctx.INT().get(0).getText()));
+						Integer.valueOf(ctx.INT().getText()));
 	}
 	
 	
 	@Override 
 	public Integer visitParens(CompoundParser.ParensContext ctx) { 
-		return visit(ctx.compound()) * Integer.valueOf(ctx.INT().get(0).getText());
+		return visit(ctx.compound()) * Integer.valueOf(ctx.INT().getText());
 	}
 	
 	

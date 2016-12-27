@@ -1,7 +1,6 @@
+package br.ufc.quimica.keyboard.parser;
+
 // Generated from Compound.g4 by ANTLR 4.3
-
- package br.ufc.quimica.keyboard.parser;
-
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -17,33 +16,33 @@ public interface CompoundVisitor<T> extends ParseTreeVisitor<T> {
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitParens( CompoundParser.ParensContext ctx);
+	T visitParens(CompoundParser.ParensContext ctx);
 
 	/**
 	 * Visit a parse tree produced by {@link CompoundParser#s}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitS( CompoundParser.SContext ctx);
+	T visitS(CompoundParser.SContext ctx);
 
 	/**
 	 * Visit a parse tree produced by {@link CompoundParser#compound}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitCompound( CompoundParser.CompoundContext ctx);
+	T visitCompound(CompoundParser.CompoundContext ctx);
 
 	/**
 	 * Visit a parse tree produced by {@link CompoundParser#hidr}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitHidr( CompoundParser.HidrContext ctx);
+	T visitHidr(CompoundParser.HidrContext ctx);
 
 	/**
 	 * Visit a parse tree produced by {@link CompoundParser#element}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitElement( CompoundParser.ElementContext ctx);
+	T visitElement(CompoundParser.ElementContext ctx);
 }

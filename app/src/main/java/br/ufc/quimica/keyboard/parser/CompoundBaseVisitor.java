@@ -1,7 +1,6 @@
+package br.ufc.quimica.keyboard.parser;
+
 // Generated from Compound.g4 by ANTLR 4.3
-
- package br.ufc.quimica.keyboard.parser;
-
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -19,7 +18,7 @@ public class CompoundBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitParens( CompoundParser.ParensContext ctx) { return visitChildren(ctx); }
+	@Override public T visitParens(CompoundParser.ParensContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}
@@ -27,7 +26,7 @@ public class CompoundBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitS( CompoundParser.SContext ctx) { return visitChildren(ctx); }
+	@Override public T visitS(CompoundParser.SContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}
@@ -35,7 +34,7 @@ public class CompoundBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitCompound( CompoundParser.CompoundContext ctx) { return visitChildren(ctx); }
+	@Override public T visitCompound(CompoundParser.CompoundContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}
@@ -43,7 +42,7 @@ public class CompoundBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitHidr( CompoundParser.HidrContext ctx) { return visitChildren(ctx); }
+	@Override public T visitHidr(CompoundParser.HidrContext ctx) { return visitChildren(ctx); }
 
 	/**
 	 * {@inheritDoc}
@@ -51,5 +50,5 @@ public class CompoundBaseVisitor<T> extends AbstractParseTreeVisitor<T> implemen
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitElement( CompoundParser.ElementContext ctx) { return visitChildren(ctx); }
+	@Override public T visitElement(CompoundParser.ElementContext ctx) { return visitChildren(ctx); }
 }
